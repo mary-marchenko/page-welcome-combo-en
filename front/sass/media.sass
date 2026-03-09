@@ -1,0 +1,266 @@
+.fav-page
+
+  @media screen and (min-width: 1921px)
+    background-size: 100% 1514px
+    background-position: 50% -141px
+
+  @media screen and (max-width: 1340px)
+    position: relative
+    .bonusWrapp
+      max-width: 90%
+      overflow-x: scroll
+      overflow-y: visible
+      -webkit-overflow-scrolling: touch
+      overscroll-behavior-x: contain
+      scrollbar-width: thin
+      scrollbar-color: $magenta $blue-number
+      -ms-overflow-style: scrollbar
+      padding-bottom: 8px
+      border-radius: 3px
+      &::-webkit-scrollbar
+        height: 8px
+        background: $blue-number
+      &::-webkit-scrollbar-thumb
+        background: $magenta
+        border-radius: 4px
+      &::-webkit-scrollbar-track
+        background: $blue-number
+      &::-webkit-scrollbar-corner
+        background: $blue-number
+    .bonusWrapp[data-ios-scrollbar="true"]
+      scrollbar-width: none
+      -ms-overflow-style: none
+      &::-webkit-scrollbar
+        display: none
+        height: 0
+      &.ios-scrollbar-outer
+        padding-bottom: 0
+    .bonusWrapp .ios-scrollbar-track-h
+      flex-shrink: 0
+      position: relative
+      height: 8px
+      width: 100%
+      background: $blue-number
+      z-index: 10
+      pointer-events: none
+      border-radius: 4px
+    .bonusWrapp .ios-scrollbar-thumb-h
+      height: 8px
+      background: $magenta
+      border-radius: 4px
+      position: absolute
+      bottom: 0
+      left: 0
+    .bonus
+      position: static
+      &__section
+        padding-top: 20px
+      &__row
+        padding-top: 40px
+      &__title
+        position: absolute
+        left: 0
+        right: 0
+        top: 323px
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        transform: none
+        z-index: 1
+        &:before,
+          &:after
+            height: 1px
+        &.games
+          top: 500px
+    .activate
+      &.cont
+        width: 100%
+    .fiq
+      &.cont
+        width: 100%
+
+  @media screen and (max-width: 1266px)
+    .welcome
+      width: 100%
+      &__decor
+        width: 1244px
+
+
+  @media screen and (max-width: 1050px)
+    .bonus
+      &__title
+        top: 297px
+        &.games
+          top: 478px
+    .welcome
+      &__title
+        margin-left: 32px
+        font-size: 40px
+      &__bonus
+        height: 61px
+        &-left
+          font-size: 40px
+          letter-spacing: 0.8px
+          padding: 0 40px
+          span
+            font-size: 26px
+            letter-spacing: 0.52px
+        &-right
+          margin-left: -35px
+          font-size: 40px
+          letter-spacing: 0.8px
+          padding: 0 40px
+      &__details
+        &-item
+          font-size: 16px
+      &__decor
+        width: 1000px
+        &-item
+          &.cube
+            display: none
+          &.coin
+            width: 140px
+            left: 85px
+          &.coin-blue
+            width: 72px
+          &.coinBig
+            width: 167px
+          &.coin-r
+            width: 167px
+          &.slot
+            top: 0
+            width: 180px
+    .drop, .info
+      width: 704px
+
+  @media screen and (max-width: 755px)
+    .drop, .info
+      width: 90%
+
+  @media screen and (max-width: 650px)
+    .welcome
+      &__details
+        &-item
+          font-size: 14px
+
+  @media screen and (max-width: 600px)
+    gap: 10px
+    .welcome
+      gap: 15px
+      &__title
+        font-size: 30px
+        gap: 5px
+        margin-left: 0
+        span
+          font-size: 14px
+          line-height: 25px
+      &__bonus
+        z-index: 2
+        height: fit-content
+        width: 277px
+        flex-direction: column
+        &-left
+          height: 43px
+          align-self: flex-start
+          font-size: 30px
+          letter-spacing: 0.6px
+          padding: 0 30px
+          span
+            font-size: 20px
+            letter-spacing: 0.4px
+        &-right
+          height: 43px
+          align-self: flex-end
+          margin-left: 0
+          font-size: 30px
+          letter-spacing: 0.6px
+          padding: 0 30px
+      &__details
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 330px
+        gap: 13px
+        position: relative
+        &-item
+          font-size: 14px
+          &:nth-child(1)
+            align-self: flex-start
+          &:nth-child(3)
+            align-self: center
+          &:nth-child(5)
+            align-self: flex-end
+        &-arrow
+          img
+            height: 10px
+        &-arrowBox
+          position: absolute
+          transform: rotate(90deg)
+          &:nth-child(2)
+            left: 56%
+            top: 3px
+          &:nth-child(4)
+            right: 23%
+            top: 47%
+      &__decor
+        width: 600px
+        &-item
+          &.coin
+            top: 75px
+            left: 105px
+            width: 105px
+          &.coin-blue
+            top: 40px
+            left: 90px
+          &.coinBig
+            display: none
+          &.coin-r
+            width: 100px
+            right: 85px
+            top: 12px
+          &.slot
+            top: 60px
+            width: 160px
+            right: 54px
+    .levels
+      padding-left: 0
+    .bonus
+      &__row
+        padding-top: 30px
+        width: 99%
+      &__title
+        top: 338px
+        margin: 0 0 0 20px
+        letter-spacing: 0.32px
+        font-size: 16px
+        height: 29px
+        padding: 0 27px
+        &:before
+          display: none
+        &:after
+          left: 40%
+        &.games
+          top: 509px
+          &:after
+            left: 38%
+
+  @media screen and (max-width: 360px)
+    .welcome
+      &__title
+        font-size: 26.4px
+      &__details
+        width: 290px
+        &-arrowBox
+          &:nth-child(2)
+            left: 64%
+          &:nth-child(4)
+            right: 19.5%
+    .bonus
+      &__title
+        top: 332px
+        &.games
+          top: 500px
+
+  @media screen and (max-width: 340px)
+    .welcome
+      &__decor
+        width: 590px
