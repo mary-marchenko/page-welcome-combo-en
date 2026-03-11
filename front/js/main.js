@@ -15,13 +15,6 @@
   function run() {
     initWelcomeDecorAnim();
 
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-    const isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
-    const isMacTouch = navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
-    const isFirefox = /Firefox/i.test(ua);
-
-    if (!isIOS && !isMacTouch && !isFirefox) return;
-
     const bonusWrapp = document.querySelector(".fav-page .bonusWrapp");
     if (!bonusWrapp) return;
 

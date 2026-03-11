@@ -12,32 +12,19 @@
       overflow-y: visible
       -webkit-overflow-scrolling: touch
       overscroll-behavior-x: contain
-      scrollbar-width: thin
-      scrollbar-color: $magenta $blue-number
-      -ms-overflow-style: scrollbar
-      padding-bottom: 8px
-      border-radius: 3px
-      &::-webkit-scrollbar
-        height: 8px
-        background: $blue-number
-      &::-webkit-scrollbar-thumb
-        background: $magenta
-        border-radius: 4px
-      &::-webkit-scrollbar-track
-        background: $blue-number
-      &::-webkit-scrollbar-corner
-        background: $blue-number
-    .bonusWrapp[data-ios-scrollbar="true"]
       scrollbar-width: none
       -ms-overflow-style: none
+      padding-bottom: 0
+      border-radius: 3px
       &::-webkit-scrollbar
         display: none
         height: 0
-      &.ios-scrollbar-outer
-        padding-bottom: 0
+    .bonusWrapp.ios-scrollbar-outer
+      padding-bottom: 0
     .bonusWrapp .ios-scrollbar-track-h
       flex-shrink: 0
-      position: relative
+      position: sticky
+      left: 0
       height: 8px
       width: 100%
       background: $blue-number
@@ -222,7 +209,7 @@
             width: 160px
             right: 54px
     .levels
-      padding-left: 0
+      //padding-left: 0
     .bonus
       &__row
         padding-top: 30px
@@ -239,7 +226,7 @@
         &:after
           left: 40%
         &.games
-          top: 509px
+          top: 504px
           &:after
             left: 38%
 
